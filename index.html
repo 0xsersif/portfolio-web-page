@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 1200px;
+        }
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+        }
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .work-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 600px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! im 0xsersif and  I'm a web developer passionate about creating functional websites.</p>
+        
+        <!-- Video Element -->
+        <video width="320" height="240" controls>
+            <source src="intro.mp4" type="video/mp4">
+            
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and various frameworks.</p>
+        
+        <h3>My Skills:</h3>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (React, Vue)</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Principles</li>
+            <li>Backend Development</li>
+        </ul>
+        
+        <!-- Audio Element -->
+        <h3>Listen to my podcast:</h3>
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+            .
+        </audio>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-grid">
+            <article class="work-item">
+                <h3>E-commerce Website</h3>
+                <p>A fully responsive online store built with React and Node.js.</p>
+                <a href="#project1">View Project</a>
+            </article>
+            <article class="work-item">
+                <h3>Portfolio Template</h3>
+                <p>A customizable portfolio template for creatives.</p>
+                <a href="#project2">View Project</a>
+            </article>
+            <article class="work-item">
+                <h3>Weather App</h3>
+                <p>A weather application using OpenWeather API.</p>
+                <a href="#project3">View Project</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <h3>Education</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Baccalaureate in Mathematical Sciences</td>
+                    <td>Lycée Technique El Farabi, Salé</td>
+                    <td>2019-2020</td>
+                </tr>
+                <tr>
+                    <td>Technical Studies in Networks and Telecommunications</td>
+                    <td>École Supérieure de Technologie, Fes</td>
+                    <td>2020-2022</td>
+                </tr>
+                <tr>
+                    <td>Self-Directed Computer Science Education</td>
+                    <td>Harvard CS50, Online Resources</td>
+                    <td>2022-Present</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>Follow me on: 
+        
+            <a href="https://github.com/0xsersif">GitHub</a> | 
+        
+        </p>
+    </footer>
+</body>
+</html>
