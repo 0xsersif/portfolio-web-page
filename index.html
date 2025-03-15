@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
-    <style>
+    <style> 
+        img {
+            width: 200px;
+            height: 200px;
+    
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,7 +20,7 @@
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #4f4cfa;
             color: white;
             padding: 1rem 0;
             position: sticky;
@@ -56,6 +62,7 @@
             border-radius: 5px;
         }
         table {
+            color: rgb(94, 67, 247);
             width: 100%;
             border-collapse: collapse;
             margin: 1rem 0;
@@ -85,7 +92,7 @@
             border: none;
         }
         footer {
-            background-color: #333;
+            background-color: #b096f8;
             color: white;
             text-align: center;
             padding: 1rem 0;
@@ -99,7 +106,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+               <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -109,17 +116,12 @@
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! im 0xsersif and  I'm a web developer passionate about creating functional websites.</p>
+         <img src="images/webdev.png" alt="">
         
-        <!-- Video Element -->
-        <video width="320" height="240" controls>
-            <source src="intro.mp4" type="video/mp4">
-            
-        </video>
-    </section>
-
-    <!-- About Section -->
+        <h1>Welcome to My Portfolio</h1>
+    <p>Hello! im 0xsersif and  I'm a web developer passionate about creating  websites.</p>
+        </section>
+         <div class="container"></div>
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and various frameworks.</p>
@@ -132,37 +134,6 @@
             <li>UI/UX Principles</li>
             <li>Backend Development</li>
         </ul>
-        
-        <!-- Audio Element -->
-        <h3>Listen to my podcast:</h3>
-        <audio controls>
-            <source src="podcast.mp3" type="audio/mpeg">
-            .
-        </audio>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work">
-        <h2>My Work</h2>
-        <div class="work-grid">
-            <article class="work-item">
-                <h3>E-commerce Website</h3>
-                <p>A fully responsive online store built with React and Node.js.</p>
-                <a href="#project1">View Project</a>
-            </article>
-            <article class="work-item">
-                <h3>Portfolio Template</h3>
-                <p>A customizable portfolio template for creatives.</p>
-                <a href="#project2">View Project</a>
-            </article>
-            <article class="work-item">
-                <h3>Weather App</h3>
-                <p>A weather application using OpenWeather API.</p>
-                <a href="#project3">View Project</a>
-            </article>
-        </div>
-    </section>
-
     <section id="resume">
         <h2>Resume</h2>
         <h3>Education</h3>
