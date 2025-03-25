@@ -4,202 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> 
     <title>My Portfolio</title>
     <style> 
-        img {
-            width: 200px;
-            height: 200px;
     
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        header {
-            background-color: #4f4cfa;
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem;
-            margin: 1rem auto;
-            max-width: 1200px;
-        }
-        h1, h2, h3 {
-            margin-bottom: 1rem;
-        }
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .work-item {
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        table {
-            color: rgb(94, 67, 247);
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        form {
-            display: grid;
-            gap: 15px;
-            max-width: 600px;
-        }
-        input, textarea, button {
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            border: none;
-        }
-        footer {
-            background-color: #b096f8;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-               <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+       <!-- Navigation -->
+       <nav>
+        <div class="logo">Othmane Sersif</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
     <!-- Home Section -->
     <section id="home">
-         <img src="images/webdev.png" alt="">
-        
-        <h1>Welcome to My Portfolio</h1>
-    <p>Hello! im 0xsersif and  I'm a web developer passionate about creating  websites.</p>
-        </section>
-         <div class="container"></div>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and various frameworks.</p>
-        
-        <h3>My Skills:</h3>
-        <ul>
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript (React, Vue)</li>
-            <li>Responsive Design</li>
-            <li>UI/UX Principles</li>
-            <li>Backend Development</li>
-        </ul>
-    <section id="resume">
-        <h2>Resume</h2>
-        <h3>Education</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Degree</th>
-                    <th>Institution</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Baccalaureate in Mathematical Sciences</td>
-                    <td>Lycée Technique El Farabi, Salé</td>
-                    <td>2019-2020</td>
-                </tr>
-                <tr>
-                    <td>Technical Studies in Networks and Telecommunications</td>
-                    <td>École Supérieure de Technologie, Fes</td>
-                    <td>2020-2022</td>
-                </tr>
-                <tr>
-                    <td>Self-Directed Computer Science Education</td>
-                    <td>Harvard CS50, Online Resources</td>
-                    <td>2022-Present</td>
-                </tr>
-            </tbody>
-        </table>
-        
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <div class="home-content">
+            <h1>Othmane Sersif</h1>
+            <h2>Blockchain Developer & Front-End Specialist</h2>
+            <div class="social-links">
+                <a href="https://github.com/0xsersif" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/othmane-sersif" target="_blank">LinkedIn</a>
             </div>
-            
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div>
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject">
-            </div>
-            
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            
-            <button type="submit">Send Message</button>
-        </form>
+        </div>
     </section>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My journey in technology has been non-traditional but focused on continuous learning:</p>
+                <p>After completing my high school degree in Mathematics and Engineering, I began my tech journey at a Higher School of Applied Science studying Networks and Communications. Though I didn't complete the formal program, this experience sparked my passion for technology.</p>
+                <p>I redirected my education through self-guided learning, beginning with Harvard's CS50 course which provided me with strong computer science fundamentals. This foundation allowed me to systematically build my skills in front-end development, mastering HTML, CSS, and JavaScript.</p>
+                <p>Currently, I'm expanding my expertise through the Moroccan Digital Academy, specializing in blockchain technology and generative AI. This combination of self-directed learning and specialized training has given me a unique perspective and practical skill set focused on emerging technologies.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Front-End Development</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (Advanced)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Blockchain Technology</h3>
+                    <ul>
+                        <li>Smart Contracts</li>
+                        <li>DApps</li>
+                        <li>Web3.js (Intermediate)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Solidity</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI Knowledge</h3>
+                    <ul>
+                        <li>Generative AI Concepts</li>
+                        <li>AI Applications (Beginner)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 1">
+                    <h3>Blockchain Project</h3>
+                    <p>Description of blockchain project</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 2">
+                    <h3>Front-End Web App</h3>
+                    <p>Description of front-end project</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/300/200" alt="Project 3">
+                    <h3>AI Integration Project</h3>
+                    <p>Description of AI project</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        <p>Follow me on: 
-        
-            <a href="https://github.com/0xsersif">GitHub</a> | 
-        
-        </p>
+        <p>© 2024 Othmane Sersif. All Rights Reserved.</p>
+        <div class="contact-info">
+            <a href="mailto:othmane.sersif@example.com">Contact Me</a>
+        </div>
     </footer>
 </body>
 </html>
